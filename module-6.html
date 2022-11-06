@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-6</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button type="button" class="magic-btn js-magic-btn">Створити магію</button>
+
+    <!-- -------------------------------- -->
+    <div class="color-picker js-color-picker"></div>
+
+    <div class="js-products">
+      <button type="button" data-action="set">Set focus to input</button>
+      <button type="button" data-action="remove">
+        Remove focus from input
+      </button>
+      <br /><br />
+      <input type="text" class="text-input" />
+
+      <br />
+
+      <p>Selected option text: <span class="text-output">none</span></p>
+
+      <p></p>
+      <p>Selected option value: <span class="value-output">none</span></p>
+
+      <p>
+        <select class="pizza-select">
+          <option value="four_meats">Four Meats</option>
+          <option value="royal_cheese">Royal Cheese</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="smoked_salmon">Smoked Salmon</option>
+        </select>
+      </p>
+    </div>
+
+    <div class="js-inner-html inner-html">
+      <form class="register-form" autocomplete="off">
+        <input type="text" name="login" placeholder="Login" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="text" class="text-input" placeholder="Input" />
+        <p>Text field value: <span class="output"></span></p>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- --------------------------------- -->
+    <div class="js-site-nav__container">
+      <ul class="site-nav list">
+        <li class="site-nav__item list-item">
+          <a href="/about" class="site-nav__link">Про нас</a>
+        </li>
+        <li class="site-nav__item list-item">
+          <a href="/portfolio" class="site-nav__link">Портфоліо</a>
+        </li>
+        <li class="site-nav__item list-item">
+          <a href="contact" class="site-nav__link">Контакти</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--  -->
+    <!-- /* ------------------------- module 6 модалка ------------------------- */ -->
+
+    <button type="button" class="button btn-open" data-action="open-modal">
+      Відкрити модалку
+    </button>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2 class="modal__title">Modal window</h2>
+        <p class="molal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          recusandae repellendus reprehenderit. Nesciunt minus suscipit
+          voluptatibus ab quibusdam tempore nihil debitis inventore? Soluta
+          accusamus iste recusandae possimus architecto sint odio, magnam
+          numquam nihil cumque ipsa amet ratione dolore. Est, porro dicta
+          voluptas blanditiis rem aperiam vero adipisci facere accusantium
+          quaerat?
+        </p>
+        <button type="button" class="button" data-action="close-modal">
+          Закрити
+        </button>
+      </div>
+    </div>
+    <!-- -------------------------- java Script -------------------------- -->
+    <script src="./js/module-6.js" type="module"></script>
+    <script src="./js/module-6-2.js" type="module"></script>
+  </body>
+</html>

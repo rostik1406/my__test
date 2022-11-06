@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+.color-picker__option {
+  width: 64px;
+  height: 64px;
+
+  margin-right: 15px;
+  border: none;
+}
+
+/*  */
+/*  */
+/*  */
+/* --------------------------------- */
+.magic-btn {
+  display: block;
+
+  padding: 16px;
+  margin: 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(72, 106, 114);
+  color: white;
+  font-size: 18px;
+}
+
+/*  */
+/* ---------------------------------- */
+.site-nav {
+  list-style: none;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.site-nav__link--current {
+  color: tomato;
+}
+
+/* -------------------------------- */
+.list-item {
+  padding: 5px;
+  margin-bottom: 10px;
+
+  border: 1px solid red;
+}
+
+/* --------------------------------- */
+.inner-html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 400px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  margin-bottom: 16px;
+  padding: 8px 12px;
+}
+
+.register-form button {
+  padding: 12px;
+}
+
+/*  ------------ module 6 модалка ------------  */
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+body.show-modal .modal {
+  transform: scale(1);
+}
+
+/* .button {
+} */
+.btn-open {
+  margin: 50px;
+}
+
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+/* .js-backdrop {
+} */
+
+.modal {
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 640px;
+  width: 100%;
+  min-height: 320px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+  transition: transform 200ms ease-in-out;
+}
+
+/* .modal__title {
+}
+
+.molal__text {
+} */
+
+/* ------------- module - 7 ------------- */
+.container {
+  padding: 10px;
+  background-color: rgb(244, 238, 238);
+  border: 1px solid red;
+}
+
+.m-7__button {
+  padding: 5px;
+  margin: 5px;
+  color: #fff;
+  background-color: rgb(20, 148, 234);
+  border: none;
+  border-radius: 5px;
+}
+
+/* <!-- ---------------- Делегірування ---------------- --> */
+.tags {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid red;
+}
+
+.tags__item {
+  margin: 5px;
+  /* padding: 5px;
+  border-radius: 5px;
+  outline: 1px solid green; */
+}
+
+.tags__btn {
+  padding: 10px;
+  border-radius: 5px;
+
+  font-size: 20px;
+  color: #212121;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tags__btn--active {
+  color: #fff;
+  background-color: rgb(106, 47, 244);
+}
