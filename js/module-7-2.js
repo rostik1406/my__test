@@ -51,14 +51,22 @@
 if ("loading" in HTMLImageElement.prototype) {
   console.log("Браузер підтримує ліниву загрузку");
 
-  const lozyImage = document.querySelector('img[loading="lazy"]');
-
-  lozyImage.forEach((img) => {
-    img.src = img.dataset.src;
-  });
+  addSrcAttrTolazyImages();
 } else {
   console.log("Браузер НЕ підтримує ліниву загрузку");
 
+  addLazySizeLoaded();
+}
+
+function addSrcAttrTolazyImages(e) {
+  const lazyImages = document.querySelector('img[loading="lazy"]');
+
+  lazyImages.forEach((img) => {
+    img.src = img.dataset.src;
+  });
+}
+
+function addLazySizeLoaded(e) {
   const script = document.createElement("script");
   script.src =
     "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js";

@@ -1,4 +1,4 @@
-// import productsArray from '../js/export.js';
+import productsArray from "../js/export.js";
 // console.log(productsArray);
 //
 
@@ -93,31 +93,31 @@
 //
 //  ------------------- Створення карточки ----------------- //
 // const product = {
-//   name: 'Сервопривід',
+//   name: "Сервопривід",
 //   description:
-//     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem possimus atque aspernatur rerum consectetur in consequuntur officiis laboriosam enim eveniet.',
+//     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem possimus atque aspernatur rerum consectetur in consequuntur officiis laboriosam enim eveniet.",
 //   price: 2000,
 //   available: true,
 //   onSale: true,
 // };
-//
-// const productsContainerEl = document.querySelector('.js-products');
+
+// const productsContainerEl = document.querySelector(".js-products");
 
 // const makeProductCard = ({ name, description, price }) => {
-//   const productEl = document.createElement('article');
-//   productEl.classList.add('product');
+//   const productEl = document.createElement("article");
+//   productEl.classList.add("product");
 
-//   const nameEl = document.createElement('h2');
+//   const nameEl = document.createElement("h2");
 //   nameEl.textContent = name;
-//   nameEl.classList.add('product__name');
+//   nameEl.classList.add("product__name");
 
-//   const descrEl = document.createElement('p');
+//   const descrEl = document.createElement("p");
 //   descrEl.textContent = description;
-//   descrEl.classList.add('product__descr');
+//   descrEl.classList.add("product__descr");
 
-//   const priceEl = document.createElement('p');
+//   const priceEl = document.createElement("p");
 //   priceEl.textContent = `Ціна: ${price} кредитів`;
-//   priceEl.classList.add('product__price');
+//   priceEl.classList.add("product__price");
 
 //   productEl.append(nameEl, descrEl, priceEl);
 
